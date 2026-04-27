@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-alpha-gradient {
+    @apply bg-gradient-to-br from-gray-200 to-gray-400 bg-clip-text text-transparent;
+  }
+
+  .text-alpha-gradient-soft {
+    @apply bg-gradient-to-br from-gray-200/55 to-gray-400/55 bg-clip-text text-transparent;
+  }
+
+  .text-alpha-gradient-faint {
+    @apply bg-gradient-to-br from-gray-200/35 to-gray-400/35 bg-clip-text text-transparent;
+  }
+
+  .text-alpha-gradient-dim {
+    @apply bg-gradient-to-br from-gray-200/25 to-gray-400/25 bg-clip-text text-transparent;
+  }
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #111111;
+  --text-primary: #FAFAFA;
+  --text-secondary: #888888;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  margin: 0;
+  font-family:
+    var(--font-geist),
+    var(--font-noto-sans-kr),
+    'Geist',
+    'Pretendard',
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background-color: #0A0A0A;
+  color: #FAFAFA;
+}
+
+.loader {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #ffffff50;
+  border-top-color: #ffffff;
+  border-radius: 9999px;
+  display: inline-block;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar Launch 버튼 톤; 강도는 약 50% 낮춤 */
+@keyframes launch-dot-halo {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.95);
+    filter: blur(4px);
+  }
+  50% {
+    opacity: 0.325;
+    transform: scale(1.175);
+    filter: blur(7px);
+  }
+}

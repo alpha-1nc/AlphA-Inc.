@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion'
 import {
+  Activity,
   LayoutDashboard,
-  Rocket,
   Server,
   type LucideIcon,
 } from 'lucide-react'
@@ -22,9 +22,9 @@ const items: VisionItem[] = [
     description: '확장 가능한 시스템을 직접 설계하는 기술적 깊이.',
   },
   {
-    icon: Rocket,
-    title: 'AI Startup',
-    description: 'AI 시대의 새로운 가치를 만드는 창업가의 비전.',
+    icon: Activity,
+    title: 'Infrastructure Operations',
+    description: '모니터링, 장애 대응, 배포 절차를 홈서버에서 직접 운영하며 익히는 실전 감각.',
   },
   {
     icon: LayoutDashboard,
@@ -58,7 +58,7 @@ export function VisionSection() {
           </motion.h2>
 
           <motion.p variants={fadeUp} className="mt-2 text-base text-alpha-gradient-faint">
-            엔지니어로 성장하고, 창업가로 완성된다.
+            서비스가 멈추지 않는 인프라를 만든다.
           </motion.p>
         </motion.div>
 

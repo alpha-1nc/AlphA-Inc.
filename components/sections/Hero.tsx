@@ -39,7 +39,9 @@ export function Hero() {
           <motion.div variants={fadeUp} className="mt-10 flex items-center gap-6">
             <LiquidMetalButton label="Services 보기" onClick={scrollToServices} />
             <a
-              href="#"
+              href="https://github.com/alpha-1nc/alpha-infra"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm text-[#666] underline underline-offset-4 transition-colors hover:text-[#999]"
             >
               GitHub →

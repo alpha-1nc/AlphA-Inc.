@@ -2,7 +2,7 @@
 
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { BookOpen, Mail } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import * as React from 'react'
 import { useEffect, useRef } from 'react'
 import { SiGithub } from 'react-icons/si'
@@ -301,22 +301,11 @@ export function CinematicFooter() {
             </h2>
 
             <div ref={linksRef} className="flex w-full flex-col items-center gap-6">
-              {/* Primary 3 buttons */}
+              {/* Primary buttons */}
               <div className="flex w-full flex-wrap justify-center gap-4">
                 <MagneticButton
                   as="a"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="footer-glass-pill group flex items-center gap-3 rounded-full px-10 py-5 text-sm font-bold md:text-base"
-                >
-                  <BookOpen className="h-5 w-5 shrink-0 text-gray-400 transition-colors group-hover:text-gray-200" />
-                  <span className="text-alpha-gradient">Notion Workspace →</span>
-                </MagneticButton>
-
-                <MagneticButton
-                  as="a"
-                  href="https://github.com/alpha-1nc"
+                  href="https://github.com/alpha-1nc/alpha-infra"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-glass-pill group flex items-center gap-3 rounded-full px-10 py-5 text-sm font-bold md:text-base"

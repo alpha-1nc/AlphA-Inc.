@@ -4,11 +4,13 @@ import { useAnimate } from 'framer-motion'
 import type React from 'react'
 import {
   SiCloudflare,
-  SiFacebook,
+  SiDocker,
   SiGithub,
-  SiGoogle,
-  SiInstagram,
-  SiX,
+  SiNextdotjs,
+  SiSqlite,
+  SiTelegram,
+  SiUbuntu,
+  SiUptimekuma,
 } from 'react-icons/si'
 
 const NO_CLIP = 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'
@@ -121,42 +123,18 @@ export function ClipPathLinks() {
   return (
     <div className="divide-y divide-[#222]">
       <div className="grid grid-cols-2 divide-x divide-[#222]">
-        <LinkBox Icon={SiGoogle} href="https://mail.google.com" ariaLabel="Google" />
-        <LinkBox Icon={SiGithub} href="https://github.com" ariaLabel="GitHub" />
+        <LinkBox Icon={SiGithub} href="https://github.com/alpha-1nc/alpha-infra" ariaLabel="GitHub alpha-infra" />
+        <LinkBox Icon={SiUbuntu} href="https://ubuntu.com" ariaLabel="Ubuntu" />
       </div>
       <div className="grid grid-cols-4 divide-x divide-[#222]">
-        <LinkBox Icon={SiInstagram} href="https://instagram.com" ariaLabel="Instagram" />
-        <LinkBox Icon={SiFacebook} href="https://facebook.com" ariaLabel="Facebook" />
-        <LinkBox
-          href="https://21st.dev"
-          imgSrc="https://media.licdn.com/dms/image/v2/D4E0BAQH3Jqtih4t7-A/company-logo_200_200/B4EZY_fSK1HUAM-/0/1744821888382/21st_dev_logo?e=2147483647&v=beta&t=8hoDRfmpNQR3aqnKWef5U0bW9Mg2GCbgwvgeQ5MKaKU"
-          className="h-6 w-auto object-contain"
-          ariaLabel="21st.dev"
-        />
-        <LinkBox Icon={SiCloudflare} href="https://cloudflare.com" ariaLabel="Cloudflare" />
+        <LinkBox Icon={SiDocker} href="https://www.docker.com" ariaLabel="Docker" />
+        <LinkBox Icon={SiCloudflare} href="https://www.cloudflare.com" ariaLabel="Cloudflare" />
+        <LinkBox Icon={SiUptimekuma} href="https://uptime.kuma.pet" ariaLabel="Uptime Kuma" />
+        <LinkBox Icon={SiTelegram} href="https://telegram.org" ariaLabel="Telegram" />
       </div>
       <div className="grid grid-cols-3 divide-x divide-[#222]">
-        <LinkBox Icon={SiX} href="https://x.com" ariaLabel="X" />
-        <LinkBox
-          href="https://claude.ai"
-          ariaLabel="Claude"
-          customContent={
-            <span
-              aria-hidden="true"
-              className="block h-5 w-5 bg-current sm:h-7 sm:w-7 md:h-9 md:w-9"
-              style={{
-                WebkitMaskImage: 'url(/icons8-claude.svg)',
-                maskImage: 'url(/icons8-claude.svg)',
-                WebkitMaskRepeat: 'no-repeat',
-                maskRepeat: 'no-repeat',
-                WebkitMaskPosition: 'center',
-                maskPosition: 'center',
-                WebkitMaskSize: 'contain',
-                maskSize: 'contain',
-              }}
-            />
-          }
-        />
+        <LinkBox Icon={SiNextdotjs} href="https://nextjs.org" ariaLabel="Next.js" />
+        <LinkBox Icon={SiSqlite} href="https://sqlite.org" ariaLabel="SQLite" />
         <LinkBox
           href="https://alphaintlgroup.com"
           ariaLabel="AlphA Inc."

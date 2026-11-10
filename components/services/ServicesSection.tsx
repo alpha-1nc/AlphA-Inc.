@@ -37,7 +37,7 @@ const services: ServiceItem[] = [
   {
     icon: Bot,
     title: 'AlphA AI',
-    description: 'AI 비서 & 자동화 에이전트. CEO의 일정, 의사결정, 분석을 지원.',
+    description: 'AI 비서 & 자동화 에이전트. 일정, 의사결정, 분석을 지원.',
     comingSoon: true,
   },
   {
